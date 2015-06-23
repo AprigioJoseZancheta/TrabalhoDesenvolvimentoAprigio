@@ -1,0 +1,66 @@
+﻿@model Domain.AddressDomain.Address
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h4>Detalhes</h4>
+
+<div>
+    <h4>Endereço</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Nome Candidato")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidate.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Rua")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Street)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Bairro")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Neighborhood)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Estado")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Cidade")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Cp")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cp)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Voltar à Lista", "Index")
+</p>
