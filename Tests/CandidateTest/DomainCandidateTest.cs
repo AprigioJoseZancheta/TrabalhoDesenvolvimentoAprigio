@@ -1,9 +1,8 @@
-﻿using System;
-using Domain.AddressDomain;
-using Domain.CandidateDomain;
+﻿using Domain.CandidateDomain;
 using FluentAssertions;
 using Infrastructure;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace Tests.CandidateTest
 {

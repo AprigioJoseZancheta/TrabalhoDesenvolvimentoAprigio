@@ -38,7 +38,6 @@ namespace Infrastructure.Data.CandidateInfra
 
         public Candidate Delete(int id)
         {
-
             var candidate = _context.Candidates.Find(id);
             DbEntityEntry entry = _context.Entry(candidate);
             entry.State = EntityState.Deleted;

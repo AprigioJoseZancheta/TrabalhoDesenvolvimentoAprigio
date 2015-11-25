@@ -1,8 +1,7 @@
-﻿using System;
-using Domain.AddressDomain;
-using Domain.InterviewDomain;
-using System.Collections.Generic;
+﻿using Domain.InterviewDomain;
 using Infrastructure;
+using System;
+using System.Collections.Generic;
 
 namespace Domain.CandidateDomain
 {
